@@ -1,51 +1,104 @@
 # EX-11-EMI-CALCULATOR
 
 ## AIM
+To write a C program that converts a binary number to its decimal equivalent using a function without return type and without arguments.
 
-To write a program to prepare EMI calculator using function without return type and with arguments.
+
+
+
 
 ## ALGORITHM
-
-1.	Start the program.
-2.	Read principal amount, rate of interest and months.
-3.	Pass these values as arguments to function.
-4.	Calculate EMI using the formula, amt=(prpow(1+r,t))/(pow(1+r,t)-1)
-5.	Display the result.
-6.	Stop the program.
-
+```
+1.Start the program.
+2.Declare a function binaryToDecimal() that:
+Does not take any arguments.
+Does not return any value (void).
+Reads the binary number from the user.
+Converts the binary number to its decimal equivalent using a loop.
+3.Inside the function:
+Initialize decimal = 0, base = 1, and remainder variables.
+Extract each bit of the binary number (starting from the least significant bit) and compute its decimal equivalent.
+Multiply the extracted bit by the appropriate power of 2 and add it to the decimal value.
+4.Call the function from the main() function.
+5.End the program.
+```
 ## PROGRAM
+```.py
+#include <stdio.h>
+#include <math.h>
+void cal(){
+    int num,val,sum=0,i=0,x;
+    scanf("%d",&num);
+    x=num;
+    while(num!=0){
+        val=num%10;
+        if (val!=0){
+            sum+=pow(2,i);
+        }
+        i++;
+        num=num/10;
+    }
+    printf("%d in binary = %d in decimal",x,sum);
+}
+int main(){
+    cal();
+}
+```
 
 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/989ba644-73a7-40f2-bd91-59cae79432b8)
 
 
 
 
 ## RESULT
+The program successfully converts a binary number to its decimal equivalent and prints the result.
 
-Thus the program to prepare EMI calculator using function without return type with arguments has been executed successfully
  
  
 
 
 # EX-12-FIBONACCI-SERIES
 ## AIM
-To write a C program to generate the Fibonacci series for the value 6.
+The aim of this program is to print all the leap years from 1 to a given number N. Leap years are those years that meet the criteria of being divisible by 4 but not divisible by 100, unless they are also divisible by 400.
+
 
 ## ALGORITHM
-1.	Start the program.
-2.	Read number of terms to display.
-3.	Add the previous two terms and store it in new term.
-4.	Assign 2nd term to 1st term and 3rd term to 2nd term.
-5.	Repeat steps 3 and 4 n number of times.
-6.	Display the result.
-7.	Stop the program.
-
+```
+1.Input: The program accepts an integer N, which is the upper limit up to which we need to find the leap years.
+2.Check Leap Year: A year is a leap year if:
+3.It is divisible by 4, and
+It is not divisible by 100, unless it is also divisible by 400.
+4.Iterate through years: Start from year 1 and iterate through each year up to N.
+Print Leap Years: For each year, check if it's a leap year using the condition. If it is, print it.
+Output: Display all leap years from 1 to N in a single line.
+5.Steps:
+Start.
+Input N (the upper limit).
+6.For each year from 1 to N:
+7.Check if the year is a leap year.
+If yes, print the year.
+8.End.
+```
 ## PROGRAM
+```.py
+#include <stdio.h>
+int main(){
+    int a,i;
+    scanf("%d",&a);
+    for (i=1;i<=a;i++){
+        if (i%4==0){
+            printf("%d ",i);
+        }
+    }
+}
+```
 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/7a7629aa-51b2-403b-818a-9ce19bb4da91)
 
 
 
@@ -54,7 +107,13 @@ To write a C program to generate the Fibonacci series for the value 6.
 
 
 ## RESULT
-Thus the program to generate the Fibonacci series for the value 6 has been executed successfully.
+The leap years between 1 and 10 are 4 and 8 because:
+
+4 is divisible by 4 and not by 100, so it's a leap year.
+
+8 is divisible by 4 and not by 100, so it's a leap year.
+
+Therefore, the program prints 4 8.
  
  
 
