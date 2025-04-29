@@ -1,13 +1,13 @@
 # EX-11-EMI-CALCULATOR
 
-## AIM
+## AIM :
 To write a C program that converts a binary number to its decimal equivalent using a function without return type and without arguments.
 
 
 
 
 
-## ALGORITHM
+## ALGORITHM : 
 1.Start the program. 
 
 2.Declare a function binaryToDecimal() that:
@@ -31,7 +31,7 @@ Multiply the extracted bit by the appropriate power of 2 and add it to the decim
 4.Call the function from the main() function.
 
 5.End the program.
-## PROGRAM
+## PROGRAM :
 ```.py
 #include <stdio.h>
 #include <math.h>
@@ -55,14 +55,14 @@ int main(){
 ```
 
 
-## OUTPUT
+## OUTPUT :
 
 ![image](https://github.com/user-attachments/assets/989ba644-73a7-40f2-bd91-59cae79432b8)
 
 
 
 
-## RESULT
+## RESULT :
 The program successfully converts a binary number to its decimal equivalent and prints the result.
 
  
@@ -70,11 +70,11 @@ The program successfully converts a binary number to its decimal equivalent and 
 
 
 # EX-12-FIBONACCI-SERIES
-## AIM
+## AIM :
 The aim of this program is to print all the leap years from 1 to a given number N. Leap years are those years that meet the criteria of being divisible by 4 but not divisible by 100, unless they are also divisible by 400.
 
 
-## ALGORITHM
+## ALGORITHM :
 1.Input: The program accepts an integer N, which is the upper limit up to which we need to find the leap years.
 
 2.Check Leap Year: A year is a leap year if:
@@ -101,7 +101,7 @@ If yes, print the year.
 
 8.End.
 
-## PROGRAM
+## PROGRAM :
 ```.py
 #include <stdio.h>
 int main(){
@@ -115,7 +115,7 @@ int main(){
 }
 ```
 
-## OUTPUT
+## OUTPUT :
 
 ![image](https://github.com/user-attachments/assets/7a7629aa-51b2-403b-818a-9ce19bb4da91)
 
@@ -125,7 +125,7 @@ int main(){
 
 
 
-## RESULT
+## RESULT :
 The leap years between 1 and 10 are 4 and 8 because:
 
 4 is divisible by 4 and not by 100, so it's a leap year.
